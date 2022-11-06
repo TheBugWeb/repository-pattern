@@ -1,0 +1,6 @@
+# Generated directories
+/node_modules
+/dist
+
+# Files generated
+/package-lock.json

@@ -1,0 +1,14 @@
+{
+  "name": "repository-pattern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Practical example of the repository pattern. 📦",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": {
+    "name": "Ivan Zaldivar",
+    "url": "https://github.com/thebug404"
+  },
+  "license": "ISC"
+}
