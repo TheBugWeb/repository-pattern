@@ -1,6 +1,13 @@
-import { pool as connection } from './config/database.mysql';
+import { MySQLRepository } from './repositories/mysql.repository';
 
 (async () => {
-  const result = await connection.query('SELECT 1 + 1 AS result')
-  console.log('result: ', result)
+  const repository = new MySQLRepository()
+
+  const data = await repository.create({
+    name: 'Ivan',
+    username: 'thebug404',
+    sex: 'M'
+  })
+
+  console.log('data: ', data)
 })()
