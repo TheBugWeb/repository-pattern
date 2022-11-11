@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
 
 import { pool as connection } from '../config/database.mysql';
-import { Query, Repository, User } from '../declarations';
+import { Query, Id, Repository, User } from '../declarations';
 
 export class MySQLRepository implements Repository<User> {
   async create (data: Partial<User>, query: Query = {}): Promise<User> {
@@ -12,11 +12,19 @@ export class MySQLRepository implements Repository<User> {
       [id, data.name, data.username, data.sex]
     )
 
+    return this.get(id)
+  }
+
+  async get(id: Id, query: Query = {}): Promise<User> {
     const [rows] = await connection.execute(
-      'SELECT * FROM users WHERE id = ?',
+      'SELECT * FROM Users WHERE id = ?',
       [id]
     ) as [User[], unknown]
 
-    return rows[0]
+    const user = rows[0]
+
+    if (!user) throw new Error(`The user with ${id} id is not exists.`);
+    
+    return user
   }
 }
