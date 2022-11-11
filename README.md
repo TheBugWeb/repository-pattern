@@ -44,7 +44,16 @@ Follow the steps below:
 mysql -u root -p
 ```
 3. We create the database
-```
-CREATE DATABASE RepositoryPattern
+```sql
+CREATE DATABASE RepositoryPattern;
+
+USE RepositoryPattern;
+
+CREATE TABLE Users (
+  id VARCHAR(36) NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  username VARCHAR(15) NOT NULL,
+  sex CHAR(1) NOT NULL
+);
 ```
 4. Done!
