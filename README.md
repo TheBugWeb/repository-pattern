@@ -94,7 +94,7 @@ CREATE TABLE Users (
 );
 ```
 
-5. To display the tables run the following command
+Display the tables run the following command.
 
 ```
 SHOW TABLES;
@@ -110,7 +110,7 @@ Results.
 +-----------------------------+
 ```
 
-6. Done!
+5. Done!
 
 ### Setup connection with MongoDB 🍃
 
@@ -124,8 +124,19 @@ mongod
 
 > **NOTE:** In the case of MongoDB, it is not necessary to create the database and collections (tables in SQL) since they are created automatically (when inserting the data)
 
-### Start project
+## Start 🚀
 
 ```
 npm run start:ts
 ```
+
+## Build 🏗️
+
+```
+npm run build
+```
+
+## Follow me ❤️
+
+- 🐦 [Twitter](https://twitter.com/thebug404)
+- 📼 [Youtube](https://www.youtube.com/channel/UCHmWusp8DFxj9NR_QxRw6HA)
