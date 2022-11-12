@@ -48,16 +48,44 @@ npm install
 Follow the steps below:
 
 1. Run on the database server. In my case I am using [Xampp](https://www.apachefriends.org/index.html)
+
 2. We connect to the database server
+
 ```
 mysql -u root -p
 ```
-3. We create the database
+
+3. We create and use database .
 ```sql
 CREATE DATABASE RepositoryPattern;
 
 USE RepositoryPattern;
+```
 
+Display all Databases.
+
+```
+SHOW DATABASES;
+```
+
+Results.
+
+```
++----------------------+
+| Database             |
++----------------------+
+| information_schema   |
+| mysql                |
+| performance_schema   |
+| phpmyadmin           |
+| > repositorypattern  |
+| test                 |
++----------------------+
+```
+
+4. Create tables.
+
+```sql
 CREATE TABLE Users (
   id VARCHAR(36) NOT NULL,
   name VARCHAR(50) NOT NULL,
@@ -65,7 +93,24 @@ CREATE TABLE Users (
   sex CHAR(1) NOT NULL
 );
 ```
-4. Done!
+
+5. To display the tables run the following command
+
+```
+SHOW TABLES;
+```
+
+Results.
+
+```
++-----------------------------+
+| Tables_in_repositorypattern |
++-----------------------------+
+| users                       |
++-----------------------------+
+```
+
+6. Done!
 
 ### Setup connection with MongoDB 🍃
 
