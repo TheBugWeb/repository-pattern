@@ -23,7 +23,7 @@ export class MySQLRepository implements Repository<User> {
 
     const user = rows[0]
 
-    if (!user) throw new Error(`The user with ${id} id is not exists.`);
+    if (!user) throw new Error(`The user with ${id} id does not exist.`);
     
     return user
   }

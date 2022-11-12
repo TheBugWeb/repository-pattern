@@ -7,5 +7,7 @@ export const environments = {
   USER_MYSQL: process.env.USER_MYSQL,
   PASSWORD_MYSQL: process.env.PASSWORD_MYSQL,
   PORT_MYSQL: process.env.PORT_MYSQL,
-  DATABASE_MYSQL: process.env.DATABASE_MYSQL
+  DATABASE_MYSQL: process.env.DATABASE_MYSQL,
+
+  MONGODB_URL: process.env.MONGODB_URL
 }
