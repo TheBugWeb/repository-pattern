@@ -4,7 +4,11 @@
   "private": true,
   "description": "Practical example of the repository pattern. 📦",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "start:ts": "ts-node src/index.ts"
+  },
   "keywords": [],
   "author": {
     "name": "Ivan Zaldivar",
