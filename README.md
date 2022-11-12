@@ -28,6 +28,15 @@ Before starting, it is necessary to configure our environment, how to establish 
 2. Have MongoDB installed.
 3. Have MySQL installed.
 
+### Environments
+
+Now it's time to set the environment variables. These allow us to configure the **databases**.
+
+Follow the steps below:
+
+1. Enter the `.env.dev` file and copy data.
+2. Create a file `.env` in the root project and copy data.
+
 ### Install dependencies 📦
 
 ```
@@ -69,3 +78,9 @@ mongod
 2. Done!
 
 > **NOTE:** In the case of MongoDB, it is not necessary to create the database and collections (tables in SQL) since they are created automatically (when inserting the data)
+
+### Start project
+
+```
+npm run start:ts
+```
