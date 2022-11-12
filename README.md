@@ -22,19 +22,19 @@ Dependency Injection allows objects to be supplied to a class instead of the cla
 
 Before starting, it is necessary to configure our environment, how to establish a connection with the Database, etc.
 
-### Prerequisites
+### Prerequisites 📝
 
 1. Have Node.js as NPM installed
 2. Have MongoDB installed.
 3. Have MySQL installed.
 
-### Install dependencies
+### Install dependencies 📦
 
 ```
 npm install
 ```
 
-### Establish connection with MySQL
+### Setup connection with MySQL 🐬
 
 Follow the steps below:
 
@@ -57,3 +57,15 @@ CREATE TABLE Users (
 );
 ```
 4. Done!
+
+### Setup connection with MongoDB 🍃
+
+Follow the steps below:
+
+1. Run on the database server. We connect the MongoDB
+```
+mongod
+```
+2. Done!
+
+> **NOTE:** In the case of MongoDB, it is not necessary to create the database and collections (tables in SQL) since they are created automatically (when inserting the data)
