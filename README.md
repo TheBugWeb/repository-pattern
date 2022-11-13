@@ -1,4 +1,4 @@
-# 📦 Repository Pattern
+# Repository Pattern 📦
 
 This is a practical and real-life example of how to use the `Repository Pattern` with `Dependency Injection` to manipulate with the database like a **PRO**. 😎
 
@@ -40,7 +40,7 @@ Follow the steps below:
 ### Install dependencies 📦
 
 ```
-npm install
+$ npm install
 ```
 
 ### Setup connection with MySQL 🐬
@@ -52,20 +52,20 @@ Follow the steps below:
 2. We connect to the database server
 
 ```
-mysql -u root -p
+$ mysql -u root -p
 ```
 
 3. We create and use database .
 ```sql
-CREATE DATABASE RepositoryPattern;
+$ CREATE DATABASE RepositoryPattern;
 
-USE RepositoryPattern;
+$ USE RepositoryPattern;
 ```
 
 Display all Databases.
 
 ```
-SHOW DATABASES;
+$ SHOW DATABASES;
 ```
 
 Results.
@@ -97,7 +97,7 @@ CREATE TABLE Users (
 Display the tables run the following command.
 
 ```
-SHOW TABLES;
+$ SHOW TABLES;
 ```
 
 Results.
@@ -118,7 +118,7 @@ Follow the steps below:
 
 1. Run on the database server. We connect the MongoDB
 ```
-mongod
+$ mongod
 ```
 2. Done!
 
@@ -127,13 +127,19 @@ mongod
 ## Start 🚀
 
 ```
-npm run start:ts
+$ npm run start:ts
+```
+
+## Development 👨‍💻
+
+```
+$ npm run dev
 ```
 
 ## Build 🏗️
 
 ```
-npm run build
+$ npm run build
 ```
 
 ## Follow me ❤️
