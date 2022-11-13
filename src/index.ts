@@ -1,24 +1,9 @@
-import './config/database.mongodb'
+import express from 'express'
 
-import { MySQLRepository } from './repositories/mysql.repository';
-import { MongoDBRepository } from './repositories/mongodb.repository';
+import { environments } from './environments/environments'
 
-(async () => {
-  // const repository = new MySQLRepository()
+const app = express()
 
-  // const data = await repository.create({
-  //   name: 'Ivan',
-  //   username: 'thebug404',
-  //   sex: 'M'
-  // })
-
-  const repository = new MongoDBRepository()
-
-  const data = await repository.create({
-    name: 'Ivan',
-    username: 'thebug404',
-    sex: 'M'
-  })
-
-  console.log('data: ', data)
-})()
+app.listen(environments.PORT, () => {
+  console.log(`Execute app in port:${environments.PORT}`)
+})
